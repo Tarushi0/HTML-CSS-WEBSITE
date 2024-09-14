@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class = "header">
+        <div class="nav">
+            <nav>
+                <!--https://www.iconspedia.com/icon/pokemon-icon-44128.html-->
+                <a href="home.html"><img src="images/logo.png" alt="pokemon logo"></a>
+                <h2>COMPETITION</h2>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="resource.html">Resource</a></li>
+                        <li><a href="competition.html">Competition</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="content1">
+        <h1>Competition form</h1>
+        <form action="https://webdevcit.com/displayvalues.php">
+            <label>enter your name:</label>
+            <input type="text" name="name">
+            <br>
+            <label for="email">enter your email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label>enter your phone number:</label>
+            <input type="number" id="number" name="number">
+            <br>
+            <label>enter preferred method of contact:</label>
+            <select name="dropdown">
+                <option value = "Email" >Email</option>
+                <option value = "Text" >Text</option>
+                <option value = "WhatsApp" >WhatsApp</option>
+                <option value = "Pidgeon" >Pidgeon</option>
+            </select>
+            <br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            <br>
+            <p>Please select your favorite Web language:</p>
+            <input type="radio" id="yes" name="updates" value="yes"> 
+            <label>Yes</label><br>
+            <input type="radio" id="no" name="updates" value="no" checked="checked">
+            <label>No</label><br>
+            favourite episode : <br>
+            <textarea rows = "5" cols = "50" name = "fav_episode"></textarea>
+            <br>
+            <input type="radio" id="ash" name="character" value="ash"> 
+            <label>Ash</label><br>
+            <input type="radio" id="Pikachu" name="character" value="Pikachu">
+            <label>Pikachu</label><br>
+            <input type="radio" id="misty" name="character" value="misty">
+            <label>misty</label><br>
+            <input type="radio" name="character" value="other" >or other character:<br>
+            <label>insert a picture: </label>
+            <input type="file" id="picture" name="picture"><br>
+            <input type="submit">
+            
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>copyright @ pokemon<br>contact: danielmcmurray@mycit.ie</p>
+    </div>
+</body>
+</html>

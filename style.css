@@ -1,0 +1,189 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/head.jpg);
+
+}
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h2{
+    margin:0 200px;
+    color:yellow;
+    font-size: 50px;
+}
+nav img{
+    width:100px;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:red;
+    text-decoration: none;
+    font-size: 24px;
+    background-color: white;
+    border-radius: 14px;
+}
+.nav-links ul li::after{
+    content:"";
+    width: 0%;
+    height:2px;
+    background: red ;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.header{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/header.jpg);
+    color:rgb(0, 225, 255);
+    width: 90%;
+    height: 200px;
+    margin:50px auto;
+    border: 5px solid;
+}
+.content1{
+    width: 90%;
+    background-color: aliceblue;
+    height: auto;
+    margin: 0 auto;
+    border: 5px solid;
+    text-align: center;
+}
+.content1 h1{
+    border-bottom: 2px solid black;
+    color:rgba(231, 12, 12, 0.568);
+}
+.footer{
+    width:90%;
+    height:100px;
+    background: black;
+    color:white;
+    margin: 0 auto;
+}
+.footer p{
+    color:white;
+    font-size:15px ;
+    text-align: center;
+
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+table img{
+    padding:30px 10px 0px 10px;
+    width: 250px;
+    height: 200px;
+    }
+    
+table h1 {
+    text-align: center;
+    font-family: 'roboto', sans-serif;
+    font-weight: 900;
+    padding-top:40px;
+}
+          
+table h2 {
+    font-family: 'roboto', sans-serif;
+    padding-left: 15px;
+    }
+          
+table h3 {
+    font-weight: 800;
+    padding-left: 18px;
+    }
+table p {
+    text-align: left;
+}
+.button {
+    background-color: #1c87c9;
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+.tbl{
+    border-bottom: 2px solid ;
+}
+form{
+    border-bottom: 2px dotted; 
+    padding:10px;
+}
+.t1{
+    width: 200px;
+    height: 100px;
+}
+.twitter-timeline{
+    margin: auto;
+}
+.contain h1{
+    color: #fff;
+    text-align: center;
+}
+  
+details{
+    background-color: #303030;
+    color: #fff;
+    font-size: 1.5rem;
+}
+  
+summary {
+    padding: .5em 1.3rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;  
+    transition: height 1s ease;
+}
+  
+summary::-webkit-details-marker {
+    display: none;
+}
+  
+summary:after{
+    content: "\002B";
+}
+  
+details[open] summary {
+      border-bottom: 1px solid #aaa;
+      margin-bottom: .5em;
+}
+  
+  details[open] summary:after{
+    content: "\00D7";
+}
+  
+details[open] div{
+    padding: .5em 1em;
+}
+details[open] div a{
+    color: white;
+}
+details[open] div a:hover{
+    color: blue;
+    text-decoration: none;
+    transition: 0.3s;
+}
